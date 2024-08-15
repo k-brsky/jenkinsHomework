@@ -37,8 +37,13 @@ dependencies {
             'io.qameta.allure:allure-selenide:2.28.1')
 }
 
-test {
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
 
     testLogging {
         lifecycle {
@@ -53,4 +58,10 @@ task demoqa_test(type: Test) {
         includeTags("demoqa")
     }
 
+}
+
+task property_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("property")
+    }
 }
