@@ -5,7 +5,6 @@ import io.qameta.allure.Step;
 import pages.components.CalendarComponent;
 import pages.components.ResultTable;
 
-import static com.codeborne.selenide.Condition.cssValue;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;

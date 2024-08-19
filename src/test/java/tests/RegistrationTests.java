@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-import static io.qameta.allure.Allure.step;
-
 public class RegistrationTests extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
